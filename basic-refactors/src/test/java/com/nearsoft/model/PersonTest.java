@@ -9,16 +9,11 @@ import static org.junit.Assert.*;
 
 public class PersonTest {
 
-    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
-
     @Test
     public void testPrintData() {
-
-        LOGGER.info("first name: " + "John");
-        LOGGER.info("middle name: " +"George");
-        LOGGER.info("last name: " +"Smith");
-        LOGGER.info("age: " + 18);
-
-
+        System.out.println("first name: " + "John");
+        System.out.println("middle name: " +"George");
+        System.out.println("last name: " +"Smith");
+        System.out.println("age: " + 18);
     }
 }
