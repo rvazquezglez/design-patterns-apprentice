@@ -1,0 +1,16 @@
+@startuml
+class Product {
+    final properties..
+}
+
+class ProductBuilder {
+    properties..
+    ProductBuilder buildPart1()
+    ProductBuilder buildPart2()
+    ProductBuilder ...()
+    ProductBuilder buildPartN()
+    Product getResult()
+}
+
+ProductBuilder .left.> Product
+@enduml

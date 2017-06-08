@@ -1,0 +1,14 @@
+@startuml
+class Consumer {
+    +method()
+}
+class MethodObject {
+    localVariable
+    ...
+    localVariableN
+    +apply()
+}
+
+Consumer <|-- MethodObject
+MethodObject <|-- Consumer
+@enduml
