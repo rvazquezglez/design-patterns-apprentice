@@ -1,0 +1,27 @@
+@startuml
+class Observable{
+    +attach(observer:Observer):void
+    +dettach(observer:Observer):void
+    +notify():void
+}
+class ConcreteObservable{
+    -state:State
+    +getState():State
+    +setState(state:State):void
+}
+class Observer {
+    +update():void
+}
+class ConcreteObserverA{
+    -observerState:State
+    +update():void
+}
+class ConcreteObserverB{
+    -observerState:State
+    +update():void
+}
+Observable -right-> Observer
+ConcreteObserverA -up-|> Observer
+ConcreteObserverB -up-|> Observer
+ConcreteObservable -up-|> Observable
+@enduml
