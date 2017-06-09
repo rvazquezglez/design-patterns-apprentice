@@ -1,0 +1,17 @@
+@startuml
+class Client
+interface Subject {
+    doOperation()
+}
+class Proxy {
+    -inner:Subject
+    doOperation()
+}
+class RealSubject {
+    doOperation()
+}
+Client -right-> Subject
+Proxy -up-|> Subject
+Proxy -right-> RealSubject
+RealSubject -up-|> Subject
+@enduml
