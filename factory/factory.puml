@@ -1,0 +1,12 @@
+@startuml
+interface Product
+class ConcreteProduct 
+class Client
+class Factory {
+    createProduct():Product
+}
+ConcreteProduct .up.|> Product
+Factory .left.> ConcreteProduct : fabrica
+Client --> Factory : solicita nuevo objeto
+Client --> Product : ocupa
+@enduml
