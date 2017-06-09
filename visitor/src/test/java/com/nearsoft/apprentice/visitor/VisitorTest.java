@@ -1,12 +1,12 @@
-package com.nearsoft.workshop.visitor;
+package com.nearsoft.apprentice.visitor;
 
-import com.nearsoft.workshop.*;
-import com.nearsoft.workshop.model.BoldText;
-import com.nearsoft.workshop.model.Document;
-import com.nearsoft.workshop.model.Hiperlink;
-import com.nearsoft.workshop.model.PlainText;
-import com.nearsoft.workshop.visitor.html.HtmlVisitor;
-import com.nearsoft.workshop.visitor.latex.LatexVisitor;
+import com.nearsoft.apprentice.Visitor;
+import com.nearsoft.apprentice.model.BoldText;
+import com.nearsoft.apprentice.model.Document;
+import com.nearsoft.apprentice.model.Hiperlink;
+import com.nearsoft.apprentice.model.PlainText;
+import com.nearsoft.apprentice.visitor.html.HtmlVisitor;
+import com.nearsoft.apprentice.visitor.latex.LatexVisitor;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;

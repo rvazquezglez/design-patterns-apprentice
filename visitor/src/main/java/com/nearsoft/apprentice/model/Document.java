@@ -1,6 +1,6 @@
-package com.nearsoft.workshop.model;
+package com.nearsoft.apprentice.model;
 
-import com.nearsoft.workshop.Visitor;
+import com.nearsoft.apprentice.Visitor;
 
 import java.util.ArrayList;
 import java.util.List;

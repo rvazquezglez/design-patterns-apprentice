@@ -1,9 +1,9 @@
-package com.nearsoft.workshop.visitor.html;
+package com.nearsoft.apprentice.visitor.html;
 
-import com.nearsoft.workshop.Visitor;
-import com.nearsoft.workshop.model.BoldText;
-import com.nearsoft.workshop.model.Hiperlink;
-import com.nearsoft.workshop.model.PlainText;
+import com.nearsoft.apprentice.Visitor;
+import com.nearsoft.apprentice.model.BoldText;
+import com.nearsoft.apprentice.model.Hiperlink;
+import com.nearsoft.apprentice.model.PlainText;
 
 public class HtmlVisitor implements Visitor {
 
