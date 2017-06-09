@@ -1,0 +1,32 @@
+@startuml
+class Client
+interface Visitor {
+    +visit(element:ConcreteElementA):void
+    +visit(element:ConcreteElementB):void
+}
+class ConcreteVisitor1 {
+    +visit(element:ConcreteElementA):void
+    +visit(element:ConcreteElementB):void
+}
+class ConcreteVisitor2 {
+    +visit(element:ConcreteElementA):void
+    +visit(element:ConcreteElementB):void
+}
+class ObjectStructure
+interface Element {
+    +accept(visitor:Visitor):void
+}
+class ConcreteElementA {
+    +accept(visitor:Visitor):void
+}
+class ConcreteElementB {
+    +accept(visitor:Visitor):void
+}
+Client -right-> Visitor
+Client -down-> ObjectStructure
+ObjectStructure o-right- Element
+ConcreteVisitor1 -up-|> Visitor
+ConcreteVisitor2 -up-|> Visitor
+ConcreteElementA -up-|> Element
+ConcreteElementB -up-|> Element
+@enduml
